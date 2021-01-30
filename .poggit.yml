@@ -5,4 +5,5 @@ branches:
 projects:
   NoDeathScreen:
     path: ""
+    icon: icon.png
 ...
