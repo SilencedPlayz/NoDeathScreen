@@ -1,0 +1,10 @@
+## set to true to allow sending titles when died,else it didnt shown
+
+allow_title: true
+
+## edit the title and subtitle message here
+
+title: "§l§cYou Died"
+subtitle: "§7Better luck next time!"
+
+## thank you for using my plugin :)
