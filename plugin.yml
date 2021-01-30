@@ -1,0 +1,6 @@
+name: NoDeathScreen
+main: SilencedTick880\Main
+author: SilencedTick880
+description: "Disable a death screen to players"
+api: 3.17.2
+version: 1.0
