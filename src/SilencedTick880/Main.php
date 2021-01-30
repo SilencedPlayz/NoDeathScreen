@@ -30,7 +30,7 @@ class Main extends PluginBase implements Listener {
                                     $player->setHealth($player->getMaxHealth());
                                     $player->setFood($player->getMaxFood());
                                     $player->teleport($this->getServer()->getDefaultLevel()->getSpawnLocation());
-                                    if($this->getConfig()->get("send_title") == false){
+                                    if($this->getConfig()->get("send_title") == true){
                                              $player->addTitle($this->getConfig()->get("title"), $this->getConfig()->get("subtitle"));
                                              return true;
                                     }
