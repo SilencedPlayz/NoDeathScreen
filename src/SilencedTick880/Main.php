@@ -28,7 +28,9 @@ class Main extends PluginBase implements Listener {
                            if($player instanceof Human) {
                                     $event->setCancelled();
                                     $player->setHealth($player->getMaxHealth());
+                                    $sender->teleport($this->getServer()->getDefaultLevel()->getSpawnLocation());
                                     $this->Configs($player);
+                                    return true;
                            }
                   }
          }
