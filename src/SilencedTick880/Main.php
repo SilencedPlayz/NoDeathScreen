@@ -28,17 +28,13 @@ class Main extends PluginBase implements Listener {
                            if($player instanceof Human) {
                                     $event->setCancelled();
                                     $player->setHealth($player->getMaxHealth());
-                                    $sender->teleport($this->getServer()->getDefaultLevel()->getSpawnLocation());
-                                    $this->Configs($player);
-                                    return true;
+                                    $player->setFood($player->getMaxFood());
+                                    $player->teleport($this->getServer()->getDefaultLevel()->getSpawnLocation());
+                                    if($this->getConfig()->get("send_title") == false){
+                                             $player->addTitle($this->getConfig()->get("title"), $this->getConfig()->get("subtitle"));
+                                             return true;
+                                    }
                            }
-                  }
-         }
-         
-         public function Configs($player){
-                  if($this->getConfig()->get("send_title") == true){
-                           $player->addTitle($this->getConfig()->get("title"), $this->getConfig()->get("subtitle"));
-                           return true;
                   }
          }
 }
