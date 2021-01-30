@@ -1,6 +1,6 @@
 ## set to true to allow sending titles when died,else it didnt shown
 
-allow_title: true
+send_title: true
 
 ## edit the title and subtitle message here
 
