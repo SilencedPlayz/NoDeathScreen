@@ -1,5 +1,9 @@
 # NoDeathScreen
-# By SilencedTick880
-# 3.17.2 above api support
-# v1.0
-# i will adding multiple command soon on config.yml
+by SilencedTick880
+
+When player dies,the death screen will-
+be cancelled then the player will-
+teleport to main world spawn then-
+will show a title message (you can disable on config)
+
+v1.0
